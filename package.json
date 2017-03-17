@@ -4,6 +4,7 @@
   "description": "Check how your local representatives have been voting",
   "main": "app.js",
   "dependencies": {
+    "hbs": "^4.0.1",
     "request": "^2.81.0"
   },
   "devDependencies": {},

@@ -2,9 +2,9 @@ const request = require('request');
 const express = require('express');
 const router = express.Router();
 
-const congress = require("./methods/request.js");
-const Legislator = require("./methods/legislators.js");
-const Votes = require(".methods/votes.js");
+const congress = require("../methods/request.js");
+const Legislator = require("../methods/legislators.js");
+const Votes = require("../methods/votes.js");
 
 
 router.get('/', function(req, res, next) {
