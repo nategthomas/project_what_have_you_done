@@ -15,12 +15,12 @@ router.get('/', function(req, res, next) {
       let legislators = JSON.parse(body).results;
       legislators = legislators.map(function(legislator) {
         return new Legislator(legislator);
-      })
+      });
       let Legislators = congress.separate(legislators);
       response.render('legislators', {Legislators: Legislators, zip: zip});
-    }
-  })
-})
+    };
+  });
+});
 
 
 router.get('/:id', function(req, res, next) {
