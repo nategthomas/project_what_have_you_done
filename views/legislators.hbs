@@ -8,7 +8,6 @@
     {{#each Legislators.house as |leg|}}
       <a href="/legislators/{{leg.bioguide_id}}">
         <li>
-          <img class="list-portrait" src="https://theunitedstates.io/images/congress/225x275/{{leg.bioguide_id}}.jpg">
           <div class="list-desc">
             <div class="highlighted list-name highlight-shadow">{{leg.fullName}}</div>
             <div class="list-party">{{leg.party}}</div>
@@ -25,7 +24,6 @@
     {{#each legislators.senate as |leg|}}
       <a href="/legislators/{{leg.bioguide_id}}">
         <li>
-          <img class="list-portrait" src="https://theunitedstates.io/images/congress/225x275/{{leg.bioguide_id}}.jpg">
           <div class="list-desc">
             <div class="highlighted list-name highlight-shadow">{{leg.fullName}}</div>
             <div class="list-party">{{leg.party}}</div>
