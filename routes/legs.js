@@ -36,10 +36,10 @@ router.get('/:id', function(req, res, next) {
   request(vote_url, function(error, res, body) {
     if (!error && response.statusCode === 200) {
       let all_votes = JSON.parse(body).results;
-      all_votes = all_votes.map(function(vote) {
+      LegVote = all_votes.map(function(vote) {
         return new Votes(vote);
       })
-      res.render('Record', {legislator: legislator, all_votes = all_votes});
+      res.render('Record', {legislator: legislator, LegVote: LegVote});
     }
   })
 })

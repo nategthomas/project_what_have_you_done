@@ -13,9 +13,7 @@
     "request": "^2.81.0",
     "serve-favicon": "^2.4.1"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "repository": {
@@ -24,8 +22,3 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nategthomas/project_what_have_you_done/issues"
-  },
-  "homepage": "https://github.com/nategthomas/project_what_have_you_done#readme"
-}

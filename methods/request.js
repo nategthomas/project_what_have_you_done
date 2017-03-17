@@ -31,7 +31,7 @@ const congress = {
       else if (legislator.chamber === "senate") {
         legis.senate.push(legislator);
       }
-    }
+    });
     return legis;
   }
 

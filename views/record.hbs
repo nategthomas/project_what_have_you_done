@@ -39,7 +39,7 @@
     Black: Not Voting</span>
   </div>
   <ul>
-    {{#each all_votes as |vote|}}
+    {{#each LegVote as |vote|}}
       <li class="bill vote-{{vote.voter_ids}}">
         <a href="{{vote.govtrack}}">
           <h3 class="highlighted highlight-shadow">{{vote.bill_id}}</h3>
