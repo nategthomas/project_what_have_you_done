@@ -1,11 +1,18 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var hbs =require('handlebars');
+
 
 var index = require('./routes/index.js');
 var legislators = require('./routes/legs.js');
 
 
 var app = express();
+
+app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/'}));
+app.set('view engine', 'hbs');
+
+
 
 app.use('/', index);
 app.use('/legislators', legislators);
