@@ -16,8 +16,8 @@ router.get('/', function(req, res, next) {
       legislators = legislators.map(function(legislator) {
         return new Legislator(legislator);
       });
-      let Legislators = congress.separate(legislators);
-      response.render('legislators', {Legislators: Legislators, zip: zip});
+      let Legs = congress.separate(legislators);
+      response.render('legislators', {Legs: Legs, zip: zip});
     };
   });
 });

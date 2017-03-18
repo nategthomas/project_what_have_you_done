@@ -5,7 +5,7 @@
 <section class="list">
   <h1>House</h1>
   <ul>
-    {{#each Legislators.house as |leg|}}
+    {{#each Legs.house as |leg|}}
       <a href="/legislators/{{leg.bioguide_id}}">
         <li>
           <img class="list-portrait" src="https://theunitedstates.io/images/congress/225x275/{{leg.bioguide_id}}.jpg">
@@ -22,7 +22,7 @@
 <section class="list padding-top">
   <h1>Senate</h1>
   <ul>
-    {{#each legislators.senate as |leg|}}
+    {{#each Legs.senate as |leg|}}
       <a href="/legislators/{{leg.bioguide_id}}">
         <li>
           <img class="list-portrait" src="https://theunitedstates.io/images/congress/225x275/{{leg.bioguide_id}}.jpg">
