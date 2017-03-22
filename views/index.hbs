@@ -1,13 +1,15 @@
+<div id='index-cont'>
 
-<section id="whyd">
-  <h1 id="title">What Have You Done?</h1>
-  <p id ="first">Discover the <strong>voting records</strong>
-  of your <strong>local b representatives</strong></p>
-  <p id ="second">Then pester their offices until their view reflect yours!</p>
-</section>
+  <div id="whyd">
+    <p id ="first">Discover the <strong>voting records</strong><br>
+    of your <strong>local representatives</strong></p>
+    <p id ="second">Then pester their offices until their view reflect yours!</p>
+  </div>
 
-    <form id ="zipform" action="/legislators" method = "get" >
-      <label for="zip" id="zip-label">Enter Your Zip Code: </label>
-      <input type="text" id="zip"  name="zip">
-      <input type="submit">
-    </form>
+  <form id ="zipform" action="/legislators" method = "get" >
+    <label for="zip" id="zip-label">Enter Your Zip Code: </label>
+    <input type="text" id="zip"  name="zip" pattern="\d{5,5}(-\d{4,4})?">
+    <input type="submit" id="zip-but"value="Go!" >
+  </form>
+
+</div>

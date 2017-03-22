@@ -1,51 +1,39 @@
-<section class="profile-header">
-  <a href="{{legislator.website}}">
-    <img src="https://theunitedstates.io/images/congress/225x275/{{legislator.bioguide_id}}.jpg">
-  </a>
-  <div class="padding-top">
-    <h1 class="highlighted profile-name highlight-shadow">
-      <a href="{{legislator.website}}">
-        {{legislator.fullName}}
-      </a>
-    </h1>
-  </div>
-</section>
-
-<h4>Contact Information</h4>
-<section class="box margin-top">
-  <div class="profile-contact">
-    <div class="contact-item">
-      <div class="grayed">Phone Number</div>
-      <div class="contact-info">{{legislator.phone}}</div>
+<div id='record-cont'>
+  <div class="profile">
+    <img class='profile-pic' src="https://theunitedstates.io/images/congress/225x275/{{legislator.bioguide_id}}.jpg">
+    <div class="identity">
+      <div id='id-party'>{{legislator.partyadj}} Congressperson </div>
+      <span id='id-name'>{{legislator.fullName}}</span>
     </div>
-    <div class="contact-item">
-      <div class="grayed">Website</div>
-      <div class="contact-info">
-        <a href="{{legislator.website}}">
-          {{legislator.website}}
-        </a>
+  </div>
+
+  <h3>Contact Information</h3>
+  <div id ='contact-info'>
+    <div id='contact-cont'>
+      <div class='contact-cont-2'>
+        <div class='contact'>Phone Number</div>
+        <div class='contact-obj'>{{legislator.phone}}</div>
+      </div>
+      <div class='contact-cont-2'>
+        <div class='contact'>Website</div>
+        <div class='contact-obj'>
+          <a href="{{legislator.website}}">{{legislator.website}}</a>
+        </div>
       </div>
     </div>
   </div>
-</section>
 
-<section>
-  <h4>Recent Votes</h4>
-  <div class="padding-top">
-    <span style="color:green">Green: Yea</span>
-    /
-    <span style="color:red">Red: Nay</span>
-    /
-    Black: Not Voting</span>
+  <div id='bills'>
+    <h3>Recent Votes</h3>
+    <ul id ='bill-ul'>
+      {{#each LegVote as |vote|}}
+        <li class="{{vote.voter_ids}}">
+          <a href="{{vote.govtrack}}">
+            <div id='bill-id'>{{vote.bill_id}}</div>
+          </a>
+          <p id='official-title'>{{vote.official_title}}</p>
+        </li>
+      {{/each}}
+    </ul>
   </div>
-  <ul>
-    {{#each LegVote as |vote|}}
-      <li class="bill vote-{{vote.voter_ids}}">
-        <a href="{{vote.govtrack}}">
-          <h3 class="highlighted highlight-shadow">{{vote.bill_id}}</h3>
-        </a>
-        <p class="padding-top">{{vote.official_title}}</p>
-      </li>
-    {{/each}}
-  </ul>
-</section>
+</div>

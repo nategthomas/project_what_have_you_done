@@ -1,0 +1,199 @@
+
+html {
+  background-color: #F5F5F5;
+}
+
+body {
+  font: 14px Arial, sans-serif;
+
+}
+.container {
+  margin: 90px auto 0 auto;
+}
+
+header {
+  text-align: center;
+  background-color: #EBFF00;
+  width: 330px;
+  margin: 0 auto;
+  a {
+    text-decoration: none;
+    color: black;
+    h1 {
+      padding: 8px;
+    }
+  }
+}
+
+
+#index-cont {
+  text-align: center;
+  #first {
+    font-size: 1.7em;
+  }
+  #second {
+    color: grey;
+  }
+  #zipform {
+    display: inline-block;
+    background-color: white;
+    margin: 0 auto;
+    width: 330px;
+    border: black 1px solid;
+    #zip-label {
+      font-size: 1.5em;
+      display: block;
+      padding: 4px;
+    }
+    #zip {
+      font-size: 3em;
+      text-align: center;
+      width: 250px;
+      margin: 5px auto;
+      display: block;
+      padding: 4px;
+    }
+    #zip-but {
+      cursor: pointer;
+      font-size: 1.2em;
+      margin: 10px auto;
+      display: block;
+      padding: 4px;
+      background-color: #EBFF00;
+      border: solid .3px grey;
+    }
+  }
+}
+
+
+#leg-cont {
+  text-align: center;
+  #zip-banner {
+    color: red;
+  }
+  h1 {
+    color: grey;
+  }
+  ul {
+    list-style: none;
+      li {
+        width: 420px;
+        margin: 0 auto;
+        text-align: left;
+        .profile-pic {
+          height: 150px;
+          display: inline-flex;
+        }
+        .info-cont {
+          display: inline-flex;
+          position: relative;
+          bottom: 29px;
+          text-align: left;
+          padding-left: 7px;
+          .info {
+            display: block;
+            .no-dec {
+              text-decoration: none;
+            }
+            .name {
+              font-size: 1.8em;
+              color: black;
+            }
+            .name:hover {
+              background: #EBFF00;
+            }
+            .party {
+              font-size: 1.5em;
+              color: grey;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+
+#record-cont {
+  text-align: center;
+  .profile-pic {
+    height: 150px;
+    display: inline-flex;
+  }
+  .identity {
+    #id-party {
+      font-size: 1.5em;
+      margin: 10px;
+    }
+    #id-name {
+      font-size: 2em;
+      background-color: #EBFF00;
+      white-space: nowrap;
+      padding: 5px;
+    }
+  }
+  h3 {
+    opacity: 0.8;
+  }
+  #contact-info {
+
+    #contact-cont {
+      padding: 10px;
+      margin: 0 auto;
+      width: 325px;
+      border: solid 1px lightgrey;
+      text-align: left;
+      background: white;
+      .contact-cont-2 {
+        margin: 0px 0px 18px 0px;
+        .contact {
+          opacity: .7;
+          margin: 3px 0;
+        }
+        .contact-obj {
+          font-size: 1.2em;
+          color: black;
+          margin: 3px 0;
+          a {
+            text-decoration: none;
+            color: black;
+          }
+          a:hover {
+            background: #EBFF00;
+          }
+
+        }
+      }
+    }
+  }
+  #bill-ul {
+    width: 500px;
+    list-style: none;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    left: -1%;
+    li {
+      margin: 12px auto;
+      padding: 14px;
+      border: solid 1px black;
+      background: white;
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      #official-title {
+        color: #333;
+      }
+    }
+    .Yea {
+      border: solid 1px green;
+    }
+    .Nay {
+      border: solid 1px red;
+    }
+  }
+
+}

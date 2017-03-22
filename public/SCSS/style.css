@@ -1,0 +1,147 @@
+html {
+  background-color: #F5F5F5; }
+
+body {
+  font: 14px Arial, sans-serif; }
+
+.container {
+  margin: 90px auto 0 auto; }
+
+header {
+  text-align: center;
+  background-color: #EBFF00;
+  width: 330px;
+  margin: 0 auto; }
+  header a {
+    text-decoration: none;
+    color: black; }
+    header a h1 {
+      padding: 8px; }
+
+#index-cont {
+  text-align: center; }
+  #index-cont #first {
+    font-size: 1.7em; }
+  #index-cont #second {
+    color: grey; }
+  #index-cont #zipform {
+    display: inline-block;
+    background-color: white;
+    margin: 0 auto;
+    width: 330px;
+    border: black 1px solid; }
+    #index-cont #zipform #zip-label {
+      font-size: 1.5em;
+      display: block;
+      padding: 4px; }
+    #index-cont #zipform #zip {
+      font-size: 3em;
+      text-align: center;
+      width: 250px;
+      margin: 5px auto;
+      display: block;
+      padding: 4px; }
+    #index-cont #zipform #zip-but {
+      cursor: pointer;
+      font-size: 1.2em;
+      margin: 10px auto;
+      display: block;
+      padding: 4px;
+      background-color: #EBFF00;
+      border: solid .3px grey; }
+
+#leg-cont {
+  text-align: center; }
+  #leg-cont #zip-banner {
+    color: red; }
+  #leg-cont h1 {
+    color: grey; }
+  #leg-cont ul {
+    list-style: none; }
+    #leg-cont ul li {
+      width: 420px;
+      margin: 0 auto;
+      text-align: left; }
+      #leg-cont ul li .profile-pic {
+        height: 150px;
+        display: inline-flex; }
+      #leg-cont ul li .info-cont {
+        display: inline-flex;
+        position: relative;
+        bottom: 29px;
+        text-align: left;
+        padding-left: 7px; }
+        #leg-cont ul li .info-cont .info {
+          display: block; }
+          #leg-cont ul li .info-cont .info .no-dec {
+            text-decoration: none; }
+          #leg-cont ul li .info-cont .info .name {
+            font-size: 1.8em;
+            color: black; }
+          #leg-cont ul li .info-cont .info .name:hover {
+            background: #EBFF00; }
+          #leg-cont ul li .info-cont .info .party {
+            font-size: 1.5em;
+            color: grey; }
+
+#record-cont {
+  text-align: center; }
+  #record-cont .profile-pic {
+    height: 150px;
+    display: inline-flex; }
+  #record-cont .identity #id-party {
+    font-size: 1.5em;
+    margin: 10px; }
+  #record-cont .identity #id-name {
+    font-size: 2em;
+    background-color: #EBFF00;
+    white-space: nowrap;
+    padding: 5px; }
+  #record-cont h3 {
+    opacity: 0.8; }
+  #record-cont #contact-info #contact-cont {
+    padding: 10px;
+    margin: 0 auto;
+    width: 325px;
+    border: solid 1px lightgrey;
+    text-align: left;
+    background: white; }
+    #record-cont #contact-info #contact-cont .contact-cont-2 {
+      margin: 0px 0px 18px 0px; }
+      #record-cont #contact-info #contact-cont .contact-cont-2 .contact {
+        opacity: .7;
+        margin: 3px 0; }
+      #record-cont #contact-info #contact-cont .contact-cont-2 .contact-obj {
+        font-size: 1.2em;
+        color: black;
+        margin: 3px 0; }
+        #record-cont #contact-info #contact-cont .contact-cont-2 .contact-obj a {
+          text-decoration: none;
+          color: black; }
+        #record-cont #contact-info #contact-cont .contact-cont-2 .contact-obj a:hover {
+          background: #EBFF00; }
+  #record-cont #bill-ul {
+    width: 500px;
+    list-style: none;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    left: -1%; }
+    #record-cont #bill-ul li {
+      margin: 12px auto;
+      padding: 14px;
+      border: solid 1px black;
+      background: white; }
+      #record-cont #bill-ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5em;
+        font-weight: bold; }
+      #record-cont #bill-ul li #official-title {
+        color: #333; }
+    #record-cont #bill-ul .Yea {
+      border: solid 1px green; }
+    #record-cont #bill-ul .Nay {
+      border: solid 1px red; }
+
+/*# sourceMappingURL=style.css.map */

@@ -18,8 +18,6 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-
-
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -57,9 +55,14 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-const port = process.env.PORT || '3000';
 
+const port = process.env.PORT || '3000';
 app.listen(port);
 
+/*
+app.listen(3000, 'localhost', function() {
+  console.log('Listening at port 3000 localhost');
+});
+*/
 
 exports.module = app;

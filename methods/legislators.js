@@ -1,6 +1,5 @@
 
 
-
 class Legislator {
   constructor(leg) {
     this.bioguide_id = leg.bioguide_id;
@@ -14,10 +13,26 @@ class Legislator {
   };
 
   get fullName() {
-    return this.first_name + this.middle_name + this.last_name;
+    return this.first_name + " " + this.last_name;
   };
 
-  
+  get partyName() {
+    if (this.party === 'R') {
+      return "Republican";
+    }
+    else if (this.party === 'D') {
+      return "Democrat";
+    }
+  };
+
+  get partyadj() {
+    if (this.party === 'R') {
+      return "Republican";
+    }
+    else if (this.party === "D") {
+      return "Democratic";
+    }
+  }
 
 }
 

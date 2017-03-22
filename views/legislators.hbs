@@ -1,37 +1,46 @@
-<section>
-  <h2>{{zip}}</h2>
-</section>
+<div id="leg-cont">
+  <div id='zip-banner'>
+    <h2>{{zip}}</h2>
+  </div>
+  <div class="branch">
+    <h1>House</h1>
+    <ul>
+      {{#each Legs.house as |leg|}}
 
-<section class="list">
-  <h1>House</h1>
-  <ul>
-    {{#each Legs.house as |leg|}}
-      <a href="/legislators/{{leg.bioguide_id}}">
-        <li>
-          <img class="list-portrait" src="https://theunitedstates.io/images/congress/225x275/{{leg.bioguide_id}}.jpg">
-          <div class="list-desc">
-            <div class="highlighted list-name highlight-shadow">{{leg.fullName}}</div>
-            <div class="list-party">{{leg.party}}</div>
-          </div>
-        </li>
-      </a>
-    {{/each}}
-  </ul>
-</section>
+          <li>
+            <img class="profile-pic" src="https://theunitedstates.io/images/congress/225x275/{{leg.bioguide_id}}.jpg">
+            <div class="info-cont">
+              <div class="info">
+                <a class='no-dec' href="/legislators/{{leg.bioguide_id}}">
+                  <div class="name">{{leg.fullName}}</div>
+                </a>
+                  <div class="party">{{leg.partyName}}</div>
 
-<section class="list padding-top">
-  <h1>Senate</h1>
-  <ul>
-    {{#each Legs.senate as |leg|}}
-      <a href="/legislators/{{leg.bioguide_id}}">
-        <li>
-          <img class="list-portrait" src="https://theunitedstates.io/images/congress/225x275/{{leg.bioguide_id}}.jpg">
-          <div class="list-desc">
-            <div class="highlighted list-name highlight-shadow">{{leg.fullName}}</div>
-            <div class="list-party">{{leg.party}}</div>
-          </div>
-        </li>
-      </a>
-    {{/each}}
-  </ul>
-</section>
+              </div>
+            </div>
+          </li>
+
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="branch">
+    <h1>Senate</h1>
+    <ul>
+      {{#each Legs.senate as |leg|}}
+          <li>
+            <img class="profile-pic" src="https://theunitedstates.io/images/congress/225x275/{{leg.bioguide_id}}.jpg">
+            <div class="info-cont">
+             <div class="info">
+               <a class="no-dec" href="/legislators/{{leg.bioguide_id}}">
+                <div class="name">{{leg.fullName}}</div>
+              </a>
+              <div class="party">{{leg.partyName}}</div>
+             </div>
+            </div>
+          </li>
+        </a>
+      {{/each}}
+    </ul>
+  </div>
+</div>
