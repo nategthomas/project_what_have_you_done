@@ -3,5 +3,11 @@ Build an application to help track the legislative activities of your local repr
 
 Completed by: Nate Thomas
 
-
 App deployed at: https://dry-citadel-99907.herokuapp.com/
+
+# Uses
+
+* NodeJS
+* Express.js
+* Handlebars.js
+* SCSS
